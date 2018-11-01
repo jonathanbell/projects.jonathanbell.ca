@@ -1,0 +1,42 @@
+.cube {
+  list-style: none;
+  transform-style: preserve-3d;
+  animation: ani 7s infinite linear;
+  display: inline-block;
+  position: relative;
+  right: -1rem;
+  top: -0.5rem;
+}
+.face {
+  width: 1rem;
+  height: 1rem;
+  background: $brand-tertiary-color;
+  list-style: none;
+  position: absolute;
+  outline: solid 1px $brand-main-color;
+  margin: -1.333rem;
+  opacity: 0.65;
+}
+.face:nth-child(1) {
+  transform: translateZ(0.5rem);
+}
+.face:nth-child(2) {
+  transform: rotateY(180deg) translateZ(0.5rem);
+}
+.face:nth-child(3) {
+  transform: rotateY(90deg) translateZ(0.5rem);
+}
+.face:nth-child(4) {
+  transform: rotateY(-90deg) translateZ(0.5rem);
+}
+.face:nth-child(5) {
+  transform: rotateX(90deg) translateZ(0.5rem);
+}
+.face:nth-child(6) {
+  transform: rotateX(-90deg) translateZ(0.5rem);
+}
+@keyframes ani {
+  to {
+    transform: rotate3d(5, 11, 13, 360deg);
+  }
+}

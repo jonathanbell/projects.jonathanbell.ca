@@ -1,0 +1,85 @@
+// Normalize
+@import '~normalize.css/normalize.css';
+@import 'myreset';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+// Variables
+@import 'variables';
+
+// HTML Elements
+@import 'elements';
+
+// Components
+@media (min-width: $phone) {
+  @import 'components/cube';
+}
+@import 'components/nav';
+@import 'components/project';
+
+// Start the party.
+
+body {
+  background-color: $main-background-color;
+  color: $main-font-color;
+}
+
+main {
+  max-width: 960px;
+  margin: 60px auto;
+  min-height: 77vh;
+  padding: 3rem 5% 0;
+
+  @media (max-width: $phone) {
+    padding-top: 3rem;
+  }
+  @media (min-width: $desktop) {
+    max-width: 1110px;
+  }
+}
+
+.built-with {
+  color: $brand-accent-color;
+}
+
+.status {
+  background: $brand-accent-color;
+  color: $brand-secondary-color;
+  border: 0.111rem solid $brand-tertiary-color;
+  padding: 5%;
+  font-size: 1.5rem;
+
+  &:after {
+    content: 'x';
+    float: right;
+    cursor: pointer;
+    font-size: 110%;
+    margin-top: -3px;
+  }
+}
+
+.invalid-feedback {
+  color: red;
+  padding-bottom: 1rem;
+  display: inline-block;
+}
+
+.admin-links {
+  font-size: 1.5rem;
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+#laravel-logo {
+  max-width: 85px;
+
+  margin: auto;
+  display: block;
+  margin-top: -0.5rem;
+}

@@ -1,0 +1,35 @@
+html {
+  /* Set system font as the font d'jour. */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  /* Use a better box model. */
+  box-sizing: border-box;
+  /* Display text at the right size, bud. */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust */
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* Make text look good. Note: This could be processor intensive on smaller machines. */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* No margin on body. If we were really strict, we'd set this on everything. */
+  margin: 0;
+}
+
+/* Don't let these elements break out of thier shell, ever. */
+audio,
+video,
+img,
+iframe {
+  max-width: 100%;
+}

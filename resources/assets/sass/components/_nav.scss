@@ -1,0 +1,110 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 57px;
+  display: flex;
+
+  @media (max-width: $phone) {
+    background-color: $brand-tertiary-color;
+  }
+
+  h1 {
+    flex: 1;
+    margin: 0;
+    line-height: 3rem;
+    text-transform: uppercase;
+
+    @media (max-width: $phone) {
+      padding-left: 16px;
+    }
+
+    @media (min-width: $phone) {
+      &:before {
+        content: 'B';
+        width: 3rem;
+        background-color: $brand-main-color;
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        cursor: pointer;
+        color: $brand-secondary-color;
+        transition: all 0.5s;
+      }
+
+      a {
+        display: inline-block;
+        text-indent: -333px;
+        transition: all 0.333s;
+        transition-timing-function: ease;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      flex: 1.333;
+    }
+    @media (min-width: $desktop) {
+      flex: 1.777;
+    }
+  }
+}
+
+@media (min-width: $phone) {
+  header:hover {
+    h1:before {
+      background-color: white;
+      color: $brand-main-color;
+    }
+    h1 a {
+      text-indent: 3.333rem;
+    }
+  }
+}
+
+.main-nav {
+  flex: 1;
+
+  @media (max-width: $phone) {
+    flex: 1.333;
+  }
+
+  .menu-items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+
+    @media (min-width: $desktop) {
+      justify-content: flex-end;
+    }
+
+    .menu-item {
+      line-height: 3rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      min-height: 57px;
+
+      @media (min-width: $desktop) {
+        padding-right: 2rem;
+      }
+
+      a {
+        padding-bottom: 1rem;
+        transition: all 0.1s;
+        border-bottom: 0 solid $brand-main-color;
+        color: $main-font-color;
+
+        &:hover {
+          border-bottom: 3px solid $brand-accent-color;
+          color: $brand-main-color;
+        }
+      }
+    }
+  }
+}
