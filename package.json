@@ -8,7 +8,7 @@
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "deploy": "npm run production && now --docker && now alias && now scale projects.jonathanbell.ca 1"
+    "deploy": "npm run production && now --docker && now alias && now scale projects-jonathanbell-ca 1"
   },
   "devDependencies": {
     "cross-env": "^5.1",

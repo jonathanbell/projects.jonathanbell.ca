@@ -1,5 +1,5 @@
 {
-  "alias": ["projects.jonathanbell.ca"],
+  "alias": ["projects-jonathanbell-ca"],
   "dotenv": ".env",
   "public": false
 }
