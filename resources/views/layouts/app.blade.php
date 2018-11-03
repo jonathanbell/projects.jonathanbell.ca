@@ -6,8 +6,11 @@
     <meta name="description" content="{{ config('app.description', 'Jonathan Bell\'s web portfolio.') }}"/>
     <meta name="rating" content="general">
     <meta name="robots" content="index, follow, all">
-    <meta name="keywords" content="Jonathan, Bell, web, developer, designer, Victoria, BC, Canada, front-end web development, coffee, just kidding, we all know, these keywords do nothing.">
+    <meta name="keywords" content="Jonathan, Bell, web, developer, designer, Victoria, BC, Canada, front-end web development, coffee, just kidding, we all know, these keywords, do nothing.">
     <meta name="author" content="Jonathan Bell">
+    <meta name="theme-color" content="#931ec3">
+    <meta name="msapplication-navbutton-color" content="#931ec3">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#931ec3">
 
     <title>{{ config('app.name', 'Jonathan Bell') }}</title>
 
