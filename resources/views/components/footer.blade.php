@@ -6,6 +6,7 @@
     <li><a href="https://github.com/jonathanbell?utf8=%E2%9C%93&tab=repositories&q=&type=source">View my code on GitHub</a></li>
     <li><a href="https://repl.it/@jonathanbell">Checkout my experiments on Repl.it</a> (be sure to click the "Run" button!)</li>
     <li><a href="https://gist.github.com/jonathanbell">Read my makeshift tech blog</a></li>
+    <li><a href="http://cv.jonathanbell.ca" title="Boring.. I know..">My résumé</a></li>
     <li><a href="https://codepen.io/jonathanbell/">I even have CodePens!</a></li>
   </ul>
 

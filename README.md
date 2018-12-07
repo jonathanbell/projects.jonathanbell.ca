@@ -23,6 +23,6 @@ Use `npm run watch` while writing SCSS and JS in order to compile on the fly and
 
 ## Deployment
 
-There is an `npm` script inside `package.json`. Assuming you have `npm` and `Node` installed, run `npm run deploy` which will deploy to [Zeit now](https://zeit.co/now) via Docker or use `git push heroku master` (for a Heroku deployment).
+There is an `npm` script inside `package.json`. Assuming you have `npm` and `Node` installed, run `npm run deploy` which will deploy to [Zeit now](https://zeit.co/now) via Docker or use `git push heroku master` (for a Heroku deployment) after you've committed locally.
 
 If using Heroku, you can upload all of your config (environment) vars with `python heroku-config.py`
