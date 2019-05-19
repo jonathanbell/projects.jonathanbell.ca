@@ -1,6 +1,6 @@
 <footer>
 
-  <p>Other than boring old <a href="jonathanbell.ca+projects@gmail.com">email</a>, here are some different ways to get in touch:</p>
+  <p>Other than boring old <a href="mailto:jonathanbell.ca+projects@gmail.com">email</a>, here are some different ways to get in touch:</p>
 
   <ul>
     <li><a rel="noopener" href="https://github.com/jonathanbell?utf8=%E2%9C%93&tab=repositories&q=&type=source">View my code on GitHub</a></li>
